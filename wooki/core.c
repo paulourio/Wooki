@@ -95,6 +95,7 @@ static void initialize_runtime(void) {
 	debug(2, _("Initializing core..\n"));
 	line.size = LINE_LENGTH;
 	line.data = MCALLOC(line.size);
+	assert(line.data != NULL);
 	tokens.list = MALLOC(MAX_TOKEN, char *);
 	assert(tokens.list != NULL);
 

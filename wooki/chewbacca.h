@@ -127,4 +127,5 @@ void parse_benchmark(char *argv[], int argc);
 /* triggers.c */
 void activate_trigger(const char *name, void **list, const int num)
 		__attribute__((__nonnull__(1)));
+
 #endif /* CHEWBACCA_H_INCLUDED */
