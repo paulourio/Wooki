@@ -1,0 +1,137 @@
+# depslib dependency file v1.0
+1303138249 source:/mnt/paulo/dev/Wooki/main.c
+	<stdlib.h>
+	<wooki.h>
+	"stack/stack_intf.h"
+
+1303113650 /mnt/paulo/dev/Wooki/wooki.h
+	<stdio.h>
+	<stdbool.h>
+	<libintl.h>
+	<locale.h>
+
+1302735569 source:/mnt/paulo/dev/Wooki/wooki.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<unistd.h>
+	<malloc.h>
+	<wooki.h>
+
+1302745730 /mnt/paulo/dev/Wooki/wooki/wooki.h
+	<stdbool.h>
+
+1303156441 source:/mnt/paulo/dev/Wooki/wooki/core.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<unistd.h>
+	<time.h>
+	<wooki.h>
+	"chewbacca.h"
+
+1303142529 /mnt/paulo/dev/Wooki/wooki/chewbacca.h
+	<stdbool.h>
+	<wooki.h>
+	"runtime.h"
+	"helpers.h"
+
+1303136487 source:/mnt/paulo/dev/Wooki/wooki/parser.c
+	<assert.h>
+	<string.h>
+	"chewbacca.h"
+
+1302746048 source:/mnt/paulo/dev/Wooki/wooki/wooki.c
+	<wooki.h>
+
+1303142597 source:/mnt/paulo/dev/Wooki/wooki/info.c
+	<stdio.h>
+	<string.h>
+	<wooki.h>
+	"chewbacca.h"
+	<malloc.h>
+
+1303137839 source:/mnt/paulo/dev/Wooki/wooki/wobject.c
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	<wooki.h>
+	"chewbacca.h"
+
+1303118783 /mnt/paulo/dev/Wooki/wooki/runtime.h
+	<stdlib.h>
+	<stdbool.h>
+	"lib/linkedlist.h"
+
+1303142813 source:/mnt/paulo/dev/Wooki/wooki/types.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"chewbacca.h"
+
+1302905026 /mnt/paulo/dev/Wooki/wooki/lib/linkedlist.h
+	<stdbool.h>
+
+1303117954 source:/mnt/paulo/dev/Wooki/wooki/lib/linkedlist.c
+	<linkedlist.h>
+	<stdlib.h>
+	<assert.h>
+	<stdbool.h>
+
+1303117904 source:/mnt/paulo/dev/Wooki/wooki/runtime.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<assert.h>
+	"chewbacca.h"
+	"runtime.h"
+
+1303142827 source:/mnt/paulo/dev/Wooki/wooki/parsers.c
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<wooki.h>
+	"chewbacca.h"
+
+1303117298 source:/mnt/paulo/dev/Wooki/wooki/helpers.c
+	<wooki.h>
+	"chewbacca.h"
+
+1303114267 /mnt/paulo/dev/Wooki/wooki/helpers.h
+
+1303142647 source:/mnt/paulo/dev/Wooki/wooki/benchmark.c
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<sys/time.h>
+	<assert.h>
+	<malloc.h>
+	"chewbacca.h"
+
+1303115367 source:/mnt/paulo/dev/Wooki/wooki/triggers.c
+	<stdio.h>
+	<string.h>
+	<assert.h>
+	<wooki.h>
+	"chewbacca.h"
+
+1303012799 source:/mnt/paulo/dev/Wooki/stack/stack.c
+	<assert.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stack.h"
+
+1303012658 /mnt/paulo/dev/Wooki/stack/stack.h
+	<stdbool.h>
+
+1303120495 source:/mnt/paulo/dev/Wooki/stack/stack_intf.c
+	<stdbool.h>
+	<string.h>
+	"stack.h"
+	"stack_intf.h"
+	<wooki.h>
+
+1303012900 /mnt/paulo/dev/Wooki/stack/stack_intf.h
+

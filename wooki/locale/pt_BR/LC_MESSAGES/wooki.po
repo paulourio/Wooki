@@ -1,0 +1,759 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wooki\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-18 07:02-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Paulo Roberto Urio <paulo@archlinux.us>\n"
+"Language-Team: Jimmy\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _r;_\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+"X-Poedit-SearchPath-1: ../../../../stack\n"
+
+#: ../../../types.c:10
+#, c-format
+msgid "\tNew integer @ %p\n"
+msgstr "\tNovo inteiro @ %p\n"
+
+#: ../../../types.c:12
+msgid "Warning: can't read integer.\n"
+msgstr "Atenção: não foi possível ler inteiro.\n"
+
+#: ../../../types.c:66
+msgid "Type not defined!\n"
+msgstr "Tipo não definido!\n"
+
+#: ../../../types.c:69
+#, c-format
+msgid "\tRead with success: %d\n"
+msgstr "\tLeitura sucedida: %d\n"
+
+#: ../../../types.c:82
+msgid "Can't set type. It is fixed.\n"
+msgstr "Não foi possível alterar tipo. Está bloqueado.\n"
+
+#: ../../../parsers.c:16
+#, c-format
+msgid "Setting debug level to %d.\n"
+msgstr "Mudando nível de debug para %d.\n"
+
+#: ../../../parsers.c:25
+msgid "Bye!"
+msgstr "Tchau!"
+
+#: ../../../parsers.c:34
+msgid "There is no selected object for this operation.\n"
+msgstr "Não há nenhum objeto selecionado para esta operação.\n"
+
+#: ../../../parsers.c:50
+#, c-format
+msgid "Object %s%s%s was not found.\n"
+msgstr "Objeto %s%s%s não encontrado.\n"
+
+#: ../../../parsers.c:65
+#: ../../../parsers.c:69
+#, c-format
+msgid "Can't read '%s' as %s\n"
+msgstr "Não foi possível ler '%s' como um %s\n"
+
+#: ../../../parsers.c:78
+msgid "Can't generate random value betweeb this range\n"
+msgstr "Não foi possível gerar valor aleatório dentro da margem\n"
+
+#: ../../../parsers.c:82
+#, c-format
+msgid "Generating random (%d..%d): \n"
+msgstr "Gerando número aleatório (%d..%d): \n"
+
+#: ../../../parsers.c:84
+#, c-format
+msgid "Generated random value: %d\n"
+msgstr "Número aleatório gerado: %d\n"
+
+#: ../../../parsers.c:101
+#, c-format
+msgid "Data type set to %s%s%s\n"
+msgstr "Tipo de dados alterado para %s%s%s\n"
+
+#: ../../../parsers.c:103
+#, c-format
+msgid "Can't change type to '%s'\n"
+msgstr "Não foi possível mudar tipo para '%s'\n"
+
+#: ../../../parsers.c:114
+#, c-format
+msgid "Memory optimization: %s%s%s\n"
+msgstr "Otimização da memória: %s%s%s\n"
+
+#: ../../../parsers.c:115
+#: ../../../runtime.c:72
+#: ../../../runtime.c:74
+msgid "activated"
+msgstr "ativado"
+
+#: ../../../parsers.c:115
+#: ../../../core.c:90
+msgid "disabled"
+msgstr "desativado"
+
+#: ../../../parsers.c:221
+#, c-format
+msgid "Object %s%s%s not found. Type \"print objects\" to get a list of installed objects.\n"
+msgstr "Objeto %s%s%s não encontrado. Digite \"print objects\" para ver a lista de objetos instalados.\n"
+
+#: ../../../parsers.c:285
+#: ../../../wobject.c:29
+#, c-format
+msgid "Object %s%s%s not found.\n"
+msgstr "Objeto %s%s%s não encontrado.\n"
+
+#: ../../../parser.c:15
+#, c-format
+msgid "Calling parser @ %s%p%s\n"
+msgstr "Chamando analizador @ %s%p%s\n"
+
+#: ../../../parser.c:21
+#, c-format
+msgid "Opcode %s%s%s is not defined.\n"
+msgstr "O opcode %s%s%s não está definido.\n"
+
+#: ../../../parser.c:29
+#, c-format
+msgid "Can't register parser for '%s'. No space left."
+msgstr "Não foi possível registrar analizador para '%s'. Sem espaço."
+
+#: ../../../parser.c:35
+#, c-format
+msgid ""
+"Parser registered:\n"
+"\tOP Code: %s%s%s\n"
+"\tFunction: %s%p%s\n"
+msgstr ""
+"Analizador registrado:\n"
+"\tOP Code: %s%s%s\n"
+"\tFunção: %s%p%s\n"
+
+#: ../../../parser.c:44
+msgid "Initializing parser..\n"
+msgstr "Inicializando analizador..\n"
+
+#: ../../../parser.c:76
+msgid "Finalizing parser..\n"
+msgstr "Finalizando analizador..\n"
+
+#: ../../../core.c:27
+msgid "TokenOverflow: The line has reached the limit.\n"
+msgstr "TokenOverflow: A linha atingiu o limite de tamanho.\n"
+
+#: ../../../core.c:28
+msgid "Ignoring line (too big)\n"
+msgstr "Ignorando linha (muito grande)\n"
+
+#: ../../../core.c:32
+#, c-format
+msgid "Token '%s' is bigger than allowed. Skipping.\n"
+msgstr "Símbolo '%s' é maior que o permitido. Ignorando.\n"
+
+#: ../../../core.c:54
+msgid ""
+"\n"
+"EOF Received\n"
+msgstr ""
+"\n"
+"EOF Recebido\n"
+
+#: ../../../core.c:66
+#, c-format
+msgid ""
+"%s %d.%d\n"
+"Type \"help\", \"copyright\" or \"license\" for more information.\n"
+msgstr ""
+"%s %d.%d\n"
+"Digite \"help\", \"copyright\" ou \"license\" para mais informações.\n"
+
+#: ../../../core.c:89
+#, c-format
+msgid "Debug level: %s%s%s\n"
+msgstr "Nível de debug: %s%s%s\n"
+
+#: ../../../core.c:91
+msgid "basic"
+msgstr "básico"
+
+#: ../../../core.c:92
+msgid "extreme"
+msgstr "extremo"
+
+#: ../../../core.c:93
+msgid "non-sense!"
+msgstr "sem-noção!"
+
+#: ../../../core.c:94
+msgid "Initializing core..\n"
+msgstr "Inicializando núcleo..\n"
+
+#: ../../../core.c:106
+msgid "Finalizing core..\n"
+msgstr "Finalizando núcleo..\n"
+
+#: ../../../helpers.c:4
+msgid "[object]"
+msgstr "[objeto]"
+
+#: ../../../helpers.c:6
+msgid ""
+"Print an object.\n"
+"Available built-in objects:\n"
+"\tobjects\t\tList installed objects.\n"
+"\tregisters\tList interpreter registers values\n"
+"\tewok\t\tInformation about the memory management\n"
+msgstr ""
+"Imprime um objeto.\n"
+"Objetos do interpretador:\n"
+"\tobjects\t\tLista os objetos instalados.\n"
+"\tregisters\tLista os registradores do interpretador\n"
+"\tewok\t\tInformação sobre o gerenciamento de memória\n"
+
+#: ../../../helpers.c:14
+msgid "[level]"
+msgstr "[nível]"
+
+#: ../../../helpers.c:16
+msgid ""
+"Set debug level.\n"
+"\tInformations about the interpreter and data structs\n"
+"\tare printed to stderr according to level set.\n"
+"\tExample: debug 1  -- Set to basic debug\n"
+"\t0\tno debug. Only errors are showed.\n"
+"\t1\tbasic debug.\n"
+"\t2\textreme debug.\n"
+"\t3\tnon-sense debug. Not recommended for users.\n"
+msgstr ""
+"Definir o nível de debug.\n"
+"\tInformações sobre o interpretador e o objeto\n"
+"\tsão imprimidas em stderr de acordo com o nível definido.\n"
+"\tExemplo: debug 1  -- Define o debug para o nível básico\n"
+"\t0\tsem debug. Apenas erros são mostrados.\n"
+"\t1\tdebug básico.\n"
+"\t2\tdebug extremo.\n"
+"\t3\tdebug sem-noção. Não recomendado para usuários.\n"
+
+#: ../../../helpers.c:28
+msgid "[from] [to] [destination]"
+msgstr "[de] [até] [destino]"
+
+#: ../../../helpers.c:30
+#, c-format
+msgid ""
+"Generate a random value.\n"
+"\tGenerate a random value and throw to the destination.\n"
+"\tThe destination can be a register, a buffer or a opcode\n"
+"\tExample: rnd 10 40 %%eax  -- Random between 10 and 40, store in %%eax\n"
+msgstr ""
+"Gerar um valor aleatório.\n"
+"\tGera um valor aleatório e joga para o destino.\n"
+"\tO destino pode ser um registrador, um buffer ou um comando\n"
+"\tExemplo: rnd 10 40 %%eax  -- Valor entre 10 e 40, armazena em %%eax\n"
+
+#: ../../../helpers.c:43
+msgid ""
+"Set data type to be stored.\n"
+"\tAfter allocate an object the type is fixed,\n"
+"\tand will not be able to change anymore.\n"
+"\tExample: type int  -- Set data type to integers\n"
+msgstr ""
+"Definir tipo de dados para serem armazenados.\n"
+"\tDepois de criar um objeto, o tipo de dados é fixado,\n"
+"\tnão permitindo alterações posteriormente.\n"
+"\tExemplo: type int  -- Muda o tipo de dados para inteiros\n"
+
+#: ../../../helpers.c:51
+msgid "[boolean]"
+msgstr "[lógico]"
+
+#: ../../../helpers.c:53
+msgid ""
+"Memory Optimization\n"
+"\t If activated, when a new data is going to be pushed to\n"
+"\ta data structure, register or buffer, the interpreter\n"
+"\twill search into already allocated data for same value.\n"
+"\tIf found, a reference to this data is passed, avoiding\n"
+"\t Note: memory optimization must be defined in the very start\n"
+"\tof the program!\n"
+"\tmemory duplication.\n"
+"\tActivate: optmem 1\n"
+"\tDeactivate: optmem 0\n"
+msgstr ""
+"Otimização da Memória\n"
+"\t Se ativada, quando um novo dado entrar no programa\n"
+"\tpara uma estrutura de dados, registrador ou buffer, o interpretador\n"
+"\tirá buscar pelo mesmo valor nos dados que já entraram no programa.\n"
+"\tSe encontrado, uma referencia para esse dado é passado, evitando\n"
+"\tduplicação de dados.\n"
+"\t Nota: otimização de memória precisa ser definida bem no início\n"
+"\tdo programa!\n"
+"\tAtivar: optmem 1\n"
+"\tDesativar: optmem 0\n"
+
+#: ../../../helpers.c:68
+msgid "[from] to [to] (step [step]), [command]"
+msgstr "[de] to [até] (step [pular]), [comando]"
+
+#: ../../../helpers.c:71
+msgid ""
+"Run a loop iteration\n"
+"\tExecute a command, passing values between\n"
+"\ta range, and if defined stepping values.\n"
+"\tExamples:\n"
+"\t\tfor 1 to 5, append          -- Equivalent: append 1 2 3 4 5\n"
+"\t\tfor 2 to 10 step 2, append  -- Equivalent: append 2 4 6 8 10\n"
+msgstr ""
+"Executar iterações\n"
+"\tExecuta um comando, passando os valores dentro de\n"
+"\tuma margem de valores, e se definido, pulando valores.\n"
+"\tExemplos:\n"
+"\t\tfor 1 to 5, append          -- Equivalente: append 1 2 3 4 5\n"
+"\t\tfor 2 to 10 step 2, append  -- Equivalente: append 2 4 6 8 10\n"
+
+#: ../../../helpers.c:83
+msgid "[times], [command]"
+msgstr "[vezes], [comando]"
+
+#: ../../../helpers.c:86
+msgid "TODO"
+msgstr ""
+
+#: ../../../helpers.c:93
+msgid ""
+"Show Memory Analysis\n"
+"\tUse this command to see the program memory status.\n"
+msgstr ""
+"Mostrar Análise da Memória\n"
+"\tUse este comando para ver informações atuais da memória do programa.\n"
+
+#: ../../../helpers.c:101
+msgid ""
+"Garbage Collector\n"
+"\tInvoke Ewoks to free input data.\n"
+msgstr ""
+"Coletor de Lixo\n"
+"\tInvoca Ewoks pra a onerosa tarefa de remover o lixo (dados de entrada).\n"
+
+#: ../../../helpers.c:109
+msgid ""
+"Exit Interpreter\n"
+"\tExit from interpreter program returning status OK to system.\n"
+msgstr ""
+"Sair do Interpretador\n"
+"\tSair do programa interpretador retornando status OK para o sistema.\n"
+
+#: ../../../helpers.c:117
+msgid ""
+"Create an instance of object. When command new is executed\n"
+"the command \"sel [object]\" is implicitly run.\n"
+msgstr ""
+"Cria uma instância do objecto. Quando o comando new for executado\n"
+"o comando \"sel [object]\" é implicitamente executado.\n"
+
+#: ../../../helpers.c:125
+msgid ""
+"Push values into data structure\n"
+"\tExample: push 1 2 3\n"
+msgstr ""
+"Executar PUSH dos valores para a estrutura de dados\n"
+"\tExemplo: push 1 2 3\n"
+
+#: ../../../helpers.c:133
+msgid "Select an object to work with.\n"
+msgstr "Seleciona um objeto para trabalhar.\n"
+
+#: ../../../triggers.c:30
+#, c-format
+msgid "activate_trigger(\"%s\", %p, %u)\n"
+msgstr "activate_trigger(\"%s\", %p, %u)\n"
+
+#: ../../../triggers.c:32
+msgid "You must select a object before use commands.\n"
+msgstr "Você deve selecionar um objeto antes de executar comandos.\n"
+
+#: ../../../triggers.c:38
+msgid "Trigger not found.\n"
+msgstr "Gatilho não encontrado.\n"
+
+#: ../../../triggers.c:44
+#, c-format
+msgid "%s%sWarning%s: object is null!\n"
+msgstr "%s%sAtenção%s: objeto está nulo!\n"
+
+#: ../../../triggers.c:47
+#, c-format
+msgid "%s%sError%s: operation blocked by safe_working. (object is null)\n"
+msgstr "%s%sErro%s: operação bloqueada pelo safe_working. (o objeto está nulo)\n"
+
+#: ../../../triggers.c:55
+msgid "Skipping trigger: number of parameteres do not reach minimum allowed.\n"
+msgstr "Pulando gatilho: número de parâmetros não atingem o mínimo permitido.\n"
+
+#: ../../../triggers.c:60
+msgid "Skipping trigger: number of parameteres ultrapass maximum allowed.\n"
+msgstr "Pulando gatilho: número de parâmetros ultrapassam o máximo permitido.\n"
+
+#: ../../../triggers.c:74
+msgid "Calling user trigger..\n"
+msgstr "Chamando gatilho..\n"
+
+#: ../../../triggers.c:78
+#, c-format
+msgid "\tUpdating object pointer from %p to %p\n"
+msgstr "\tAtualizando ponteiro do objeto: de %p para %p\n"
+
+#: ../../../wobject.c:14
+#, c-format
+msgid "Can't register trigger for '%s'. No space left."
+msgstr "Não foi possível registrar gatilho para '%s'. Sem espaço."
+
+#: ../../../wobject.c:23
+#, c-format
+msgid ""
+"Trigger registered (for object %s%s%s)\n"
+"\tOP Code: %s%s%s\n"
+"\tFunction: %s%p%s\n"
+msgstr ""
+"Gatilho registrado (para o objeto %s%s%s)\n"
+"\tOP Code: %s%s%s\n"
+"\tFunção: %s%p%s\n"
+
+#: ../../../wobject.c:52
+msgid "Object found!\n"
+msgstr "Objeto encontrado!\n"
+
+#: ../../../wobject.c:80
+#, c-format
+msgid ""
+"There are %d objects. The list bellow show each object\n"
+"separated by class name.\n"
+msgstr ""
+"Há %d objetos. A lista abaixo mostra cada objeto\n"
+"organizado pelas classes dos objetos.\n"
+
+#: ../../../wobject.c:89
+#, c-format
+msgid "%sClass %s%s%s\n"
+msgstr "%sClasse %s%s%s\n"
+
+#: ../../../wobject.c:111
+msgid "Object information"
+msgstr "Informação do Objeto"
+
+#: ../../../wobject.c:112
+msgid "Name"
+msgstr "Nome"
+
+#: ../../../wobject.c:113
+msgid "currently created"
+msgstr "está criado"
+
+#: ../../../wobject.c:114
+msgid "not created"
+msgstr "não está criado"
+
+#: ../../../wobject.c:115
+msgid "Class name"
+msgstr "Classe"
+
+#: ../../../wobject.c:116
+msgid "Triggers"
+msgstr "Gatilhos"
+
+#: ../../../wobject.c:125
+msgid "takes no paramaters\n"
+msgstr "não aceita parâmetros\n"
+
+#: ../../../wobject.c:127
+#, c-format
+msgid "takes %d parameters\n"
+msgstr "aceita %d parâmetros\n"
+
+#: ../../../wobject.c:129
+msgid "no restriction for parameters count\n"
+msgstr "sem restrição no número de parâmetros\n"
+
+#: ../../../wobject.c:132
+#, c-format
+msgid "takes up to %d %s\n"
+msgstr "aceita até %d %s\n"
+
+#: ../../../wobject.c:133
+#: ../../../wobject.c:136
+msgid "parameter"
+msgstr "parâmetro"
+
+#: ../../../wobject.c:133
+#: ../../../wobject.c:136
+msgid "parameters"
+msgstr "parâmetros"
+
+#: ../../../wobject.c:135
+#, c-format
+msgid "takes at least %d %s\n"
+msgstr "precisa de pelo menos %d %s\n"
+
+#: ../../../wobject.c:138
+#, c-format
+msgid "accepts from %d until %d parameters\n"
+msgstr "aceita de %d até %d parâmetros\n"
+
+#: ../../../wobject.c:149
+#, c-format
+msgid "Can't register object '%s'. It already exists.\n"
+msgstr "Não foi possível registrar objeto '%s'. Ele já existe.\n"
+
+#: ../../../wobject.c:158
+#, c-format
+msgid "New object: %s%s%s %s@%s %s%p%s\n"
+msgstr "Novo objeto: %s%s%s %s@%s %s%p%s\n"
+
+#: ../../../info.c:17
+#, c-format
+msgid "%sMemory Info%s\n"
+msgstr "%sStatus da Memória%s\n"
+
+#: ../../../info.c:18
+#, c-format
+msgid "\t%sTotal bytes allocated%s: %i bytes "
+msgstr "\t%sTotal de bytes alocados%s: %i bytes "
+
+#: ../../../info.c:21
+#, c-format
+msgid "\t%sChunks not being used%s: %i\n"
+msgstr "\t%sPedaços não sendo utilizados%s: %i\n"
+
+#: ../../../info.c:23
+#, c-format
+msgid "\t%sNumber of chunks allocated with mmap%s: %i\n"
+msgstr "\t%sPedaços alocados com mmap%s: %i\n"
+
+#: ../../../info.c:25
+#, c-format
+msgid "\t%sSize of chunks allocated with mmap%s: %i bytes"
+msgstr "\t%sTamanho dos pedaços alocados com mmap%s: %i bytes"
+
+#: ../../../info.c:28
+#, c-format
+msgid "\t%sTotal allocated with malloc%s: %i bytes"
+msgstr "\t%sTotal alocado com malloc%s: %i bytes"
+
+#: ../../../info.c:31
+#, c-format
+msgid "\t%sTotal memory not in use%s: %i bytes"
+msgstr "\t%sTotal de memória liberada%s: %i bytes"
+
+#: ../../../info.c:34
+#, c-format
+msgid "\t%sTop-most releasable chunk size%s: %i bytes\n"
+msgstr "\t%sTamanho do pedaço mais liberável%s: %i bytes\n"
+
+#: ../../../info.c:57
+#, c-format
+msgid "No help for %s\n"
+msgstr "Ajuda não encontrada para %s\n"
+
+#: ../../../info.c:69
+#, c-format
+msgid ""
+"%sWooki Interpreter Help%s\n"
+"\tWooki interpreter is a program to help in analysis of data structures, with tools for benchmarking and debug. The data structures are compiled with the interpreter, and they are connect to the interpreter throught an interface. To see all interfaces (objects), type \"print objects\"\n"
+"\tTo start using an object, first you need to create an object and then commands for the structure can be passed.\n"
+"How to use help\n"
+"\tType \"help\" and the item you want to see about, for instance:\n"
+"\t\thelp new  -- Show help information for \"new\" command.\n"
+msgstr ""
+"%sAjuda do Interpretador Wooki%s\n"
+"\tInterpretador Wooki é um programa para ajudar na análise de estrutura de dados, com ferramentos para benchmarking e debug. As estruturas de dados são compiladas junto com o interpretador, sendo ligadas através de uma interface. Para ver todas as interfaces (objetos), digite \"print objects\"\n"
+"\tPara começar a usar um objecto, primeiro você precisa criá-lo, para que então, os comandos digitados possam ser passados para as estruturas.\n"
+"Como usar a ajuda\n"
+"\tDigite \"help\" e o termo que você deseja ver, por exemplo:\n"
+"\t\thelp new  -- Mostra informações sobre o comando \"new\".\n"
+
+#: ../../../info.c:81
+#, c-format
+msgid "%sOpcodes%s: %s\n"
+msgstr ""
+
+#: ../../../info.c:87
+msgid ""
+"Copyright (c) 2011 Chewbacca Software Foundation.\n"
+"All Rights Reserved.\n"
+"\n"
+msgstr ""
+"Copyright (c) 2011 Chewbacca Software Foundation.\n"
+"Todos os direitos reservados.\n"
+"\n"
+
+#: ../../../info.c:89
+msgid ""
+"Copyright (c) 2011 Paulo Roberto Urio.\n"
+"All Rights Reserved.\n"
+msgstr ""
+"Copyright (c) 2011 Paulo Roberto Urio.\n"
+"Todos os direitos reservados.\n"
+
+#: ../../../info.c:95
+#, c-format
+msgid ""
+"This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.\n"
+"%sYou are free%s:\n"
+"\t%sto Share%s — to copy, distribute and transmit the work\n"
+"\t%sto Remix%s — to adapt the work\n"
+"%sUnder the following conditions%s:\n"
+"\t%sAttribution%s — You must attribute the work in the manner \n"
+"\t\tspecified by the author or licensor (but \n"
+"\t\tnot in any way that suggests that they endorse \n"
+"\t\tyou or your use of the work).\n"
+"\t%sNoncommercial%s — You may not use this work for commercial purposes.\n"
+"%sWith the understanding that%s:\n"
+"\t%sWaiver%s — Any of the above conditions can be waived if you get \n"
+"\t\tpermission from the copyright holder. \n"
+"\t%sPublic Domain%s — Where the work or any of its elements is in \n"
+"\t\tthe public domain under applicable law, that \n"
+"\t\tstatus is in no way affected by the license. \n"
+"\t%sOther Rights%s — In no way are any of the following rights \n"
+"\t\taffected by the license: \n"
+"\t◉ Your fair dealing or fair use rights, or other applicable\n"
+"\t\tcopyright exceptions and limitations;\n"
+"\t◉ The author's moral rights;\n"
+"\t◉ Rights other persons may have either in the work itself or in \n"
+"\t\thow the work is used, such as publicity or \n"
+"\t\tprivacy rights.\n"
+"%sNotice%s — This is a human-readable summary of the Legal Code.\n"
+"\tCheck out the full license in the web site.\n"
+msgstr ""
+"A presente obra encontra-se licenciada sob a licença Creative Commons Attribution-NonCommercial 3.0 Brazil. Para visualizar uma cópia da licença, visite http://creativecommons.org/licenses/by-nc/3.0/br/ ou mande uma carta para: Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.\n"
+"%sVocê tem a liberdade de%s:\n"
+"\t%sCompartilhar%s — copiar, distribuir e transmitir a obra.\n"
+"\t%sRemixar%s — criar obras derivadas.\n"
+"%sSob as seguintes condições%s:\n"
+"\t%sAtribuição%s — Você deve creditar a obra da forma especificada \n"
+"\t\tpelo autor ou licenciante (mas não de maneira \n"
+"\t\tque sugira que estes concedem qualquer aval a \n"
+"\t\tvocê ou ao seu uso da obra).\n"
+"\t%sUso não-comercial%s — Você não pode usar esta obra para fins comerciais.\n"
+"%sFicando claro que%s:\n"
+"\t%sRenúncia%s — Qualquer das condições acima pode ser renunciada \n"
+"\t\tse você obtiver permissão do titular dos direitos autorais.\n"
+"\t%sDomínio Público%s — Onde a obra ou qualquer de seus elementos estiver em \n"
+"\t\tdomínio público sob o direito aplicável, esta \n"
+"\t\tcondição não é, de maneira alguma, afetada pela licença.\n"
+"\t%sOutros Direitos%s — Os seguintes direitos não são, de maneira alguma,  \n"
+"\t\tafetados pela licença: \n"
+"\t◉ Limitações e exceções aos direitos autorais ou quaisquer\n"
+"\t\tusos livres aplicáveis;\n"
+"\t◉ Os direitos morais do autor;\n"
+"\t◉ Direitos que outras pessoas podem ter sobre a obra ou sobre \n"
+"\t\ta utilização da obra, tais como direitos de \n"
+"\t\timagem ou privacidade.\n"
+"%sAviso%s — Este é um resumo amigável da Licença Jurídica.\n"
+"\tVeja a licença integralmente na internet.\n"
+
+#: ../../../runtime.c:34
+#, c-format
+msgid "Found reference of %p @ %p!\n"
+msgstr "Referência encontrada! %p @ %p\n"
+
+#: ../../../runtime.c:46
+msgid "No reference was found. Creating:\n"
+msgstr "Nenhum referência foi encontrada. Criando:\n"
+
+#: ../../../runtime.c:71
+msgid "Memory Optimization"
+msgstr "Otimização da memória"
+
+#: ../../../runtime.c:72
+#: ../../../runtime.c:74
+msgid "deactivated"
+msgstr "desativado"
+
+#: ../../../runtime.c:73
+msgid "Safe working"
+msgstr "Modo seguro"
+
+#: ../../../runtime.c:75
+msgid "Data type"
+msgstr "Tipo de dados"
+
+#: ../../../runtime.c:76
+msgid "Items in cache"
+msgstr "Itens em cache"
+
+#: ../../../runtime.c:88
+msgid "Initializing runtime..\n"
+msgstr "Inicializando runtime..\n"
+
+#: ../../../runtime.c:107
+msgid "Finalizing runtime..\n"
+msgstr "Finalizando runtime..\n"
+
+#: ../../../../stack/stack_intf.c:9
+#, c-format
+msgid "\tNew stack allocated at %s%p%s\n"
+msgstr "\tNova pilha alocada em %s%p%s\n"
+
+#: ../../../../stack/stack_intf.c:16
+msgid "\tStack freed.\n"
+msgstr "\tA pilha foi liberada.\n"
+
+#: ../../../../stack/stack_intf.c:34
+#, c-format
+msgid "%d\n"
+msgstr ""
+
+#: ../../../../stack/stack_intf.c:36
+#, c-format
+msgid "\tStack is empty\n"
+msgstr "\tA pilha está vazia\n"
+
+#: ../../../helpers.h:8
+msgid "Syntax"
+msgstr "Sintaxe"
+
+#: ../../../helpers.h:10
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#~ msgid "\tPoping from stack. Value: %s%s%d%s @ %s%p%s\n"
+#~ msgstr "\tTirando da pilha, o valor %s%s%d%s @ %s%p%s\n"
+#~ msgid "Cache size"
+#~ msgstr "Tamanho do cache"
+#~ msgid "Print an object or a buffer.\n"
+#~ msgstr "Imprimir um objeto ou um cache.\n"
+#~ msgid "%sWarning%s: object already is null!\n"
+#~ msgstr "%sAtenção%s: objeto está nulo!\n"
+#~ msgid "%s%sError%s: object is null. (trigger blocked by safe_working)\n"
+#~ msgstr ""
+#~ "%s%sErro%s: O objeto está nulo. (gatilho bloqueado por safe_working)\n"
+#~ msgid "Object '%s' not found.\n"
+#~ msgstr "Objeto '%s' não encontrado.\n"
+#~ msgid "Freeing data @ %p\n"
+#~ msgstr "Liberando dados em %p\n"
+#~ msgid "\tPushing into stack the value %s%s%d%s @ %s%p%s\n"
+#~ msgstr "\tEmpurrando para a pilha o valor %s%s%d%s @ %s%p%s\n"
+#~ msgid "Wooki Interpreter Help\n"
+#~ msgstr "Ajuda do Interpretador Wooki\n"
+#~ msgid "parse_push(%p, %d)\n"
+#~ msgstr "parse_push(%p, %d)\n"
+#~ msgid "    Saving value: %d @ %p\n"
+#~ msgstr "    Salvando valor: %d @ %p\n"
+#~ msgid "Can't read value.\n"
+#~ msgstr "Não foi possível ler valor\n"
+#~ msgid "Entered in debug parser!"
+#~ msgstr "Entrou no parser do debug!"
+
