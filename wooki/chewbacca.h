@@ -8,79 +8,79 @@
 #define ENABLE_DEBUG 1
 
 #ifdef ENABLE_DEBUG
-#	define debug(level,...) \
-				if (level<=rtl.debuglevel) fprintf(stderr, __VA_ARGS__)
+#    define debug(level,...) \
+                if (level<=rtl.debuglevel) fprintf(stderr, __VA_ARGS__)
 #else
-#	define debug(...)
+#    define debug(...)
 #endif
 
 /* Debug levels */
-#define	NO_DEBUG		0
-#define	BASIC_DEBUG		1
-#define	EXTREME_DEBUG	2
-#define NONSENSE_DEBUG	3
+#define    NO_DEBUG        0
+#define    BASIC_DEBUG        1
+#define    EXTREME_DEBUG    2
+#define NONSENSE_DEBUG    3
 
-#define TALLOC(type)		(type *) malloc(sizeof(type))
-#define CALLOC(length)		(char *) calloc(length, sizeof(char))
-#define MALLOC(len,type)	(type *) malloc(((size_t) len) * sizeof(type))
-#define	MCALLOC(length)		MALLOC(length, char)
+#define TALLOC(type)        (type *) malloc(sizeof(type))
+#define CALLOC(length)        (char *) calloc(length, sizeof(char))
+#define MALLOC(len,type)    (type *) malloc(((size_t) len) * sizeof(type))
+#define    MCALLOC(length)        MALLOC(length, char)
 
-#define token(index)		*(argv + ((size_t) index)*sizeof(char *))
+#define token(index)        *(argv + ((size_t) index)*sizeof(char *))
 
-#define MAX_PARSERS		100
-#define MAX_TRIGGERS	50		/* Maximum triggers for each object */
-#define	MAX_OBJECTS		40
-#define MAX_WORD_LEN	15
-#define MAX_TOKEN		1000
+#define MAX_PARSERS        100
+#define MAX_TRIGGERS    50        /* Maximum triggers for each object */
+#define    MAX_OBJECTS        40
+#define MAX_WORD_LEN    15
+#define MAX_TOKEN        1000
 
 /* Initial value for line length. If getline() needs more, realloc is used. */
 #define LINE_LENGTH 100
-#define NOINPUT		-1
-#define	NO_SELECTED_OBJECT	(-1)
+#define NOINPUT        -1
+#define    NO_SELECTED_OBJECT    (-1)
 
-#define INTEGER	1
-#define INT64	2
-#define CHAR	3
-#define	BOOL	4
-#define	FLOAT	5
-#define	DOUBLE	6
+#define INTEGER    1
+#define INT64    2
+#define CHAR    3
+#define    BOOL    4
+#define    FLOAT    5
+#define    DOUBLE    6
 
-#define DEFAULT_INTERACTIVE			(true);//(false)
-#define DEFAULT_DEBUG				NO_DEBUG; //NONSENSE_DEBUG
-#define	DEFAULT_MEM_OPTIMIZATION	(false)
-#define DEFAULT_TYPE				INTEGER
+#define DEFAULT_INTERACTIVE            (true);//(false)
+#define DEFAULT_DEBUG                NO_DEBUG; //NONSENSE_DEBUG
+#define    DEFAULT_MEM_OPTIMIZATION    (false)
+#define DEFAULT_TYPE                INTEGER
 
-struct runtime	rtl;
+struct runtime    rtl;
 
 /* Parser */
-typedef	void (*fcmd_t)(char *[], int); /* Used for parsers */
+typedef    void (*fcmd_t)(char *[], int); /* Used for parsers */
 
 struct parser_trigger {
-	char	*opcode;
-	fcmd_t	function;
-	fhelp_t	helper;
+    char    *opcode;
+    fcmd_t    function;
+    fhelp_t    helper;
 };
 
-typedef struct parser_trigger	parser_tr;
+typedef struct parser_trigger    parser_tr;
 
 
 struct line {
-	char	*data;		/* Last read line */
-	int		length;
-	size_t	size;
+    char    *data;        /* Last read line */
+    int        length;
+    size_t    size;
 };
 
 
 struct tokens {
-	char	**list;		/* List of pointers for each token */
-	int		count;		/* Stored tokens count */
-	size_t	size;		/* Token size in bytes */
+    char    **list;        /* List of pointers for each token */
+    int        count;        /* Stored tokens count */
+    size_t    size;        /* Token size in bytes */
 };
 
 
 struct parser {
-	parser_tr	*list;
-	size_t		count;
+    parser_tr    *list;
+    size_t        count;
 };
 
 #include "runtime.h"
@@ -101,7 +101,7 @@ void show_license(void);
 /* parser.c */
 void parse_tokens(void);
 void register_parser(const char *name, const fcmd_t function,
-					const fhelp_t fhelper);
+                    const fhelp_t fhelper);
 
 /* parsers.c */
 void parse_debug(char *argv[], int argc);
@@ -126,6 +126,6 @@ void parse_benchmark(char *argv[], int argc);
 
 /* triggers.c */
 void activate_trigger(const char *name, void **list, const int num)
-		__attribute__((__nonnull__(1)));
+        __attribute__((__nonnull__(1)));
 
 #endif /* CHEWBACCA_H_INCLUDED */

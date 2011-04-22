@@ -4,21 +4,21 @@
  * or send a letter to Creative Commons, 171 Second Street, Suite 300,
  * San Francisco, California, 94105, USA.
  *
- * Authors:	Paulo Urio (December 2010)
- * 			Ygor Mutti (December 2010)
+ * Authors:    Paulo Urio (December 2010)
+ *             Ygor Mutti (December 2010)
  */
-#ifndef	LINKEDLIST_H
+#ifndef    LINKEDLIST_H
 #define LINKEDLIST_H
 
 #include <stdbool.h>
 
 struct ln_list_node {
-	void				*value;
-	struct ln_list_node	*next;
+    void                *value;
+    struct ln_list_node    *next;
 };
 
-typedef struct ln_list_node	ln_list_node;
-typedef ln_list_node		*ln_list;
+typedef struct ln_list_node    ln_list_node;
+typedef ln_list_node        *ln_list;
 
 typedef int (*fcmpl_t)(void *, void *);
 

@@ -1,14 +1,14 @@
 #ifndef HELPERS_H_INCLUDED
 #define HELPERS_H_INCLUDED
 
-#define syntax(opcode,param)	\
-		{	\
-			char	synhelp[100]; \
-			sprintf(synhelp, "%s%s:%s %s%s%s %s%s%s\n", \
-					CC_BOLD, _("Syntax"), CC_RESTORE, CC_RED, opcode, \
-					CC_RESTORE, CC_CYAN, param, CC_RESTORE); \
-			out(_("%s"), synhelp); \
-		}
+#define syntax(opcode,param)    \
+        {    \
+            char    synhelp[100]; \
+            sprintf(synhelp, "%s%s:%s %s%s%s %s%s%s\n", \
+                    CC_BOLD, _("Syntax"), CC_RESTORE, CC_RED, opcode, \
+                    CC_RESTORE, CC_CYAN, param, CC_RESTORE); \
+            out(_("%s"), synhelp); \
+        }
 
 /* helpers.c */
 void help_print(void);

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Wooki\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-04-18 07:02-0300\n"
+"POT-Creation-Date: 2011-04-20 19:12-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Paulo Roberto Urio <paulo@archlinux.us>\n"
 "Language-Team: Jimmy\n"
@@ -17,6 +17,37 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ../../..\n"
 "X-Poedit-SearchPath-1: ../../../../stack\n"
+
+#: ../../../benchmark.c:43
+msgid "Reached maximum of benchmarks\n"
+msgstr "Número máximo de benchmarks atingido\n"
+
+#: ../../../benchmark.c:67
+#, c-format
+msgid "Clock: %d\n"
+msgstr ""
+
+#: ../../../benchmark.c:69
+#, c-format
+msgid "Time: %lf\n"
+msgstr "Tempo: %lf\n"
+
+#: ../../../benchmark.c:71
+#, c-format
+msgid "Memory: %i bytes"
+msgstr "Memória: %i bytes"
+
+#: ../../../benchmark.c:84
+msgid "Benchmark Tool\n"
+msgstr "Ferramenta de Benchmark\n"
+
+#: ../../../benchmark.c:97
+msgid "Missing name for benchmark. (ex: bm save bma)\n"
+msgstr "Faltando o nome para o benchmark. (ex: bm save bma)\n"
+
+#: ../../../benchmark.c:105
+msgid "Missing name for benchmark. (ex: bm compare a b)\n"
+msgstr "Faltando nome para o benchmark. (ex: bm compare a b)\n"
 
 #: ../../../types.c:10
 #, c-format
@@ -49,88 +80,88 @@ msgstr "Mudando nível de debug para %d.\n"
 msgid "Bye!"
 msgstr "Tchau!"
 
-#: ../../../parsers.c:34
+#: ../../../parsers.c:33
 msgid "There is no selected object for this operation.\n"
 msgstr "Não há nenhum objeto selecionado para esta operação.\n"
 
-#: ../../../parsers.c:50
+#: ../../../parsers.c:49
 #, c-format
 msgid "Object %s%s%s was not found.\n"
 msgstr "Objeto %s%s%s não encontrado.\n"
 
-#: ../../../parsers.c:65
-#: ../../../parsers.c:69
+#: ../../../parsers.c:64
+#: ../../../parsers.c:68
 #, c-format
 msgid "Can't read '%s' as %s\n"
 msgstr "Não foi possível ler '%s' como um %s\n"
 
-#: ../../../parsers.c:78
+#: ../../../parsers.c:77
 msgid "Can't generate random value betweeb this range\n"
 msgstr "Não foi possível gerar valor aleatório dentro da margem\n"
 
-#: ../../../parsers.c:82
+#: ../../../parsers.c:81
 #, c-format
 msgid "Generating random (%d..%d): \n"
 msgstr "Gerando número aleatório (%d..%d): \n"
 
-#: ../../../parsers.c:84
+#: ../../../parsers.c:83
 #, c-format
 msgid "Generated random value: %d\n"
 msgstr "Número aleatório gerado: %d\n"
 
-#: ../../../parsers.c:101
+#: ../../../parsers.c:100
 #, c-format
 msgid "Data type set to %s%s%s\n"
 msgstr "Tipo de dados alterado para %s%s%s\n"
 
-#: ../../../parsers.c:103
+#: ../../../parsers.c:102
 #, c-format
 msgid "Can't change type to '%s'\n"
 msgstr "Não foi possível mudar tipo para '%s'\n"
 
-#: ../../../parsers.c:114
+#: ../../../parsers.c:113
 #, c-format
 msgid "Memory optimization: %s%s%s\n"
 msgstr "Otimização da memória: %s%s%s\n"
 
-#: ../../../parsers.c:115
+#: ../../../parsers.c:114
 #: ../../../runtime.c:72
 #: ../../../runtime.c:74
 msgid "activated"
 msgstr "ativado"
 
-#: ../../../parsers.c:115
-#: ../../../core.c:90
+#: ../../../parsers.c:114
+#: ../../../core.c:93
 msgid "disabled"
 msgstr "desativado"
 
-#: ../../../parsers.c:221
+#: ../../../parsers.c:212
 #, c-format
 msgid "Object %s%s%s not found. Type \"print objects\" to get a list of installed objects.\n"
 msgstr "Objeto %s%s%s não encontrado. Digite \"print objects\" para ver a lista de objetos instalados.\n"
 
-#: ../../../parsers.c:285
+#: ../../../parsers.c:274
 #: ../../../wobject.c:29
 #, c-format
 msgid "Object %s%s%s not found.\n"
 msgstr "Objeto %s%s%s não encontrado.\n"
 
-#: ../../../parser.c:15
+#: ../../../parser.c:16
 #, c-format
 msgid "Calling parser @ %s%p%s\n"
 msgstr "Chamando analizador @ %s%p%s\n"
 
-#: ../../../parser.c:21
+#: ../../../parser.c:22
 #, c-format
 msgid "Opcode %s%s%s is not defined.\n"
 msgstr "O opcode %s%s%s não está definido.\n"
 
-#: ../../../parser.c:29
+#: ../../../parser.c:30
 #, c-format
 msgid "Can't register parser for '%s'. No space left."
 msgstr "Não foi possível registrar analizador para '%s'. Sem espaço."
 
-#: ../../../parser.c:35
+#: ../../../parser.c:36
 #, c-format
 msgid ""
 "Parser registered:\n"
@@ -141,11 +172,11 @@ msgstr ""
 "\tOP Code: %s%s%s\n"
 "\tFunção: %s%p%s\n"
 
-#: ../../../parser.c:44
+#: ../../../parser.c:45
 msgid "Initializing parser..\n"
 msgstr "Inicializando analizador..\n"
 
-#: ../../../parser.c:76
+#: ../../../parser.c:78
 msgid "Finalizing parser..\n"
 msgstr "Finalizando analizador..\n"
 
@@ -162,7 +193,7 @@ msgstr "Ignorando linha (muito grande)\n"
 msgid "Token '%s' is bigger than allowed. Skipping.\n"
 msgstr "Símbolo '%s' é maior que o permitido. Ignorando.\n"
 
-#: ../../../core.c:54
+#: ../../../core.c:55
 msgid ""
 "\n"
 "EOF Received\n"
@@ -170,37 +201,32 @@ msgstr ""
 "\n"
 "EOF Recebido\n"
 
-#: ../../../core.c:66
-#, c-format
-msgid ""
-"%s %d.%d\n"
-"Type \"help\", \"copyright\" or \"license\" for more information.\n"
-msgstr ""
-"%s %d.%d\n"
-"Digite \"help\", \"copyright\" ou \"license\" para mais informações.\n"
+#: ../../../core.c:69
+msgid "Type \"help\", \"copyright\" or \"license\" for more information.\n"
+msgstr "Digite \"help\", \"copyright\" ou \"license\" para mais informações.\n"
 
-#: ../../../core.c:89
+#: ../../../core.c:92
 #, c-format
 msgid "Debug level: %s%s%s\n"
 msgstr "Nível de debug: %s%s%s\n"
 
-#: ../../../core.c:91
+#: ../../../core.c:94
 msgid "basic"
 msgstr "básico"
 
-#: ../../../core.c:92
+#: ../../../core.c:95
 msgid "extreme"
 msgstr "extremo"
 
-#: ../../../core.c:93
+#: ../../../core.c:96
 msgid "non-sense!"
 msgstr "sem-noção!"
 
-#: ../../../core.c:94
+#: ../../../core.c:97
 msgid "Initializing core..\n"
 msgstr "Inicializando núcleo..\n"
 
-#: ../../../core.c:106
+#: ../../../core.c:110
 msgid "Finalizing core..\n"
 msgstr "Finalizando núcleo..\n"
 
@@ -375,42 +401,42 @@ msgstr ""
 msgid "Select an object to work with.\n"
 msgstr "Seleciona um objeto para trabalhar.\n"
 
-#: ../../../triggers.c:30
+#: ../../../triggers.c:29
 #, c-format
 msgid "activate_trigger(\"%s\", %p, %u)\n"
 msgstr "activate_trigger(\"%s\", %p, %u)\n"
 
-#: ../../../triggers.c:32
+#: ../../../triggers.c:31
 msgid "You must select a object before use commands.\n"
 msgstr "Você deve selecionar um objeto antes de executar comandos.\n"
 
-#: ../../../triggers.c:38
+#: ../../../triggers.c:36
 msgid "Trigger not found.\n"
 msgstr "Gatilho não encontrado.\n"
 
-#: ../../../triggers.c:44
+#: ../../../triggers.c:42
 #, c-format
 msgid "%s%sWarning%s: object is null!\n"
 msgstr "%s%sAtenção%s: objeto está nulo!\n"
 
-#: ../../../triggers.c:47
+#: ../../../triggers.c:45
 #, c-format
 msgid "%s%sError%s: operation blocked by safe_working. (object is null)\n"
 msgstr "%s%sErro%s: operação bloqueada pelo safe_working. (o objeto está nulo)\n"
 
-#: ../../../triggers.c:55
+#: ../../../triggers.c:53
 msgid "Skipping trigger: number of parameteres do not reach minimum allowed.\n"
 msgstr "Pulando gatilho: número de parâmetros não atingem o mínimo permitido.\n"
 
-#: ../../../triggers.c:60
+#: ../../../triggers.c:58
 msgid "Skipping trigger: number of parameteres ultrapass maximum allowed.\n"
 msgstr "Pulando gatilho: número de parâmetros ultrapassam o máximo permitido.\n"
 
-#: ../../../triggers.c:74
+#: ../../../triggers.c:72
 msgid "Calling user trigger..\n"
 msgstr "Chamando gatilho..\n"
 
-#: ../../../triggers.c:78
+#: ../../../triggers.c:76
 #, c-format
 msgid "\tUpdating object pointer from %p to %p\n"
 msgstr "\tAtualizando ponteiro do objeto: de %p para %p\n"
@@ -511,12 +537,12 @@ msgstr "precisa de pelo menos %d %s\n"
 msgid "accepts from %d until %d parameters\n"
 msgstr "aceita de %d até %d parâmetros\n"
 
-#: ../../../wobject.c:149
+#: ../../../wobject.c:150
 #, c-format
 msgid "Can't register object '%s'. It already exists.\n"
 msgstr "Não foi possível registrar objeto '%s'. Ele já existe.\n"
 
-#: ../../../wobject.c:158
+#: ../../../wobject.c:159
 #, c-format
 msgid "New object: %s%s%s %s@%s %s%p%s\n"
 msgstr "Novo objeto: %s%s%s %s@%s %s%p%s\n"
