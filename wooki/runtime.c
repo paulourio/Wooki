@@ -6,66 +6,6 @@
 #include "runtime.h"
 
 
-/* Reference a pointer
- * Parameters
- *        data:    Pointer do data to be referenced.
- *        can_free: on memory optimization, if true, the memory of data
- 8                  is freed if a reference to same already exists.
- * Result
- *        pointer:    Pointer to data referenced.
- * NOTE
- *        If memory optimization is activated, same memory content will be
- *    searched in the cache (allocated_data), and if a pointer to same content
- *  is found, the pointer to it will be returned.
- */
-void *setreference(void *data, size_t data_size, bool can_free) {
-    struct data_reference    *ref;
-
-    if (rtl.optimize_memory) {
-        ln_list    node;
-
-        node = rtl.allocated_data;
-        while (node) { /// TODO: Optimization not tested.
-            ref = node->value;
-            if (ref->size == data_size
-                && memcmp(ref->ptr, data, data_size) == 0) {
-                struct data_reference    *temp;
-                /* Found same memory content. Return reference */
-                debug(3, _("Found reference of %p @ %p!\n"), data, node->value);
-                temp = ((struct data_reference *) node->value);
-                //temp->count++;
-                if (can_free) {
-                    //debug(3, _("Freeing data @ %p\n"), data);
-                    free(data);
-                }
-                return (temp->ptr);
-            }
-            node = node->next;
-        }
-        /* If optimize memory and data wasn't found, append data. */
-        debug(3, _("No reference was found. Creating:\n"));
-    }
-    /* Create new reference */
-    ref = TALLOC(struct data_reference);
-    assert(ref != NULL);
-    ref->ptr = data;
-    ref->size = data_size;
-    ln_list_insert_first(&rtl.allocated_data, ref);
-    debug(3, _f("\tReference: %s%p (int %i)\n"), CC_BLUE, data, pvalue(data, int));
-    return (data);
-}
-
-/* Get data size from RTL */
-void *reference(void *data, bool can_free) {
-    return (setreference(data, getsizeof(rtl.type), can_free));
-}
-
-
-void garbage_collector_naive(void) {
-    ln_list_clear(&rtl.allocated_data, true);
-}
-
-
 void print_ewok(void) {
     out("%sEwok%s\n", CC_BOLD CC_BROWN, CC_RESTORE);
     out("\t%s: %s%s%s\n", _("Memory Optimization"), CC_BOLD,

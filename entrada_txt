@@ -1,0 +1,167 @@
+debug	0			# Levels: 0, 1, 2
+type	int			# char, int, int64, bool, float, double
+buffer	result 100	# buffer of size = sizeof(int)*100
+
+new [object] [parameters,]
+	object: type of the object
+	parameters: list of parameters
+	
+	ex: new stack 10	# stack with limit 10
+	
+free
+	Free the object.
+	
+append [values]
+	values: list of values to be inserted and the end.
+	
+	ex: append 2 4 6 8 10
+       
+appendfor [start] [direction] [final] (step [value])
+	start: initial value
+	direction: to, downto
+	final: final value
+	(not required parameters)
+	value: step by values
+	
+	ex: appendfor 2 to 10 step 2
+		# Insert from 2 to 10, stepping 2. (2 4 6 8 10)
+	
+insert [position]	[value]		# Insert a value in a position
+	ex: insert 1 30
+	
+isorted [value]		# Insert a value sorted
+	ex: isorted 30
+
+push [value]
+	ex: push 2
+	
+top [destination]
+	ex: top	# print top item (peek)
+	
+pop [destination]		
+	destination: buffer name. If not defined, destination is stdout
+	
+	ex: pop
+	ex: pop result		# add to buffer "result"
+
+enqueue [value]
+dequeue [destination]
+
+remove [type]
+	type: front, back
+	
+	ex: remove front
+	
+delete [type] ([value] / div [divisible])
+	type: first, last, all, (+ divisible)
+		If divisible is added to type, value will be used to
+		divide items and check whether it is divisible.
+	value: value to be deleted
+	
+	ex: delete first 10		# Remove first 10 found
+	ex: delete all divisible 11	# Remove all divisible by 11
+
+print [object]
+	object: buffer name, info, meminfo
+	
+	Print in the stdout the object, or a buffer
+	
+	ex: print
+	ex: print result
+	
+puts [string]
+	string: quoted text
+	
+	ex: puts "This string will be printed in stdout"
+	
+sort   [object] [algorythm]
+	object: buffer name.
+	algorythm: qsort, heap, bubble, bozo.
+	
+	no_parameters: call sort method of object
+	
+	ex: sort 
+	ex: sort result qsort
+	
+search [value]
+	Call search function of the object.
+	
+compare [values]
+	Compare a list of values with the values in object
+
+clear [object]
+	object: buffer name. Is no object is set, call object method clear
+	
+	Clear the object or a buffer.
+	
+
+# Example input:
+
+debug 0
+type int
+buffer eax 10
+new stack
+push 1
+push 42
+push 5
+pop eax		# pop 5
+top
+print info
+pop eax		# pop 42
+pop eax		# pop 1
+pop eax		# underflow, add null to buffer
+print eax
+info
+clear
+free
+
+# output:
+
+42
+	Object: stack {
+			stack *top = 0x345f0
+		}
+	Dump: {
+		 node @ 0x345f0
+			void	*data = 5 @ 0x111f0
+			node	*next = 0x345fa
+		 node @ 0x345fa
+			void	*data = 42 @ 0x132f0
+			snode	*next = null
+	}
+5 42 1
+
+
+# using the parser library 
+
+object("stack", stack);
+link("new", stack_new);
+link("free", stack_free);
+link("push", stack_push);
+link("pop", stack_pop);
+link("top", stack_top);
+link("clear", stack_clear);
+link("info", info_stack);
+link("print". print_stack);
+execute();
+
+
+# Another example for interactive mode
+
+>> print meminfo
+Memory Info
+	Total bytes allocated: 135168 bytes (132.00 KB)
+	Chunks not being used: 1
+	Number of chunks allocated with mmap: 0
+	Size of chunks allocated with mmap: 0 bytes (0.00 KB)
+	Total allocated with malloc: 208 bytes (0.20 KB)
+	Total memory not in use: 134960 bytes (131.80 KB)
+	Top-most releasable chunk size: 134960
+>> 
+
+
+
+rnd 20 40 push
+for 20 to 1000 step 4 append
+
+

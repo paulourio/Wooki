@@ -12,17 +12,17 @@
 #include <stdbool.h>
 
 struct st_node {
-	void			*data;
-	struct st_node	*next;
+    void            *data;
+    struct st_node    *next;
 };
 
-typedef	struct st_node	st_node;
+typedef    struct st_node    st_node;
 
 struct stack {
-	st_node	*top;
+    st_node    *top;
 };
 
-typedef	struct stack *	stack;
+typedef    struct stack *    stack;
 
 stack stack_new(void);
 void stack_free(const stack s, const bool free_content);

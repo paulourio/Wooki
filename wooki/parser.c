@@ -55,7 +55,7 @@ static void initialize_parser(void) {
 
     register_parser("optmem", parse_optmem, help_optmem);
     register_parser("meminfo", (fcmd_t) meminfo, help_meminfo);
-    register_parser("ewok", (fcmd_t) garbage_collector_naive, help_ewok);
+//    register_parser("ewok", (fcmd_t) garbage_collector_naive, help_ewok);
     register_parser("bm", parse_benchmark, help_benchmark);
 
     register_parser("print", parse_print, help_print);

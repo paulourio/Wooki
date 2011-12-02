@@ -1,0 +1,14 @@
+
+
+optmem 1
+new pilha
+bm save("ini")
+repeat(1000, repeat(1000, rnd(10, 100, push)))
+bm save("fim")
+bm compare("ini", "fim")
+meminfo
+free
+ewok
+meminfo
+exit
+

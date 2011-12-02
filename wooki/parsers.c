@@ -248,8 +248,10 @@ void parse_pop(char *argv[], int argc) {
             char    *data = MCALLOC(len);
 
             strcpy(data, token(i));
-            list[i-1] = setreference(data, len, true);
-            /// TODO: Don't need to set reference in pop?
+            list[i-1] = reference(data, len);
+            if (list[i-1] != data) {
+                free(data);
+            }
         }
         activate_trigger(token(0), list, argc - 1);
         free(list);
